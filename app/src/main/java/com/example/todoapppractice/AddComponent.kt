@@ -13,19 +13,3 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.todoapppractice.ui.theme.TodoApppracticeTheme
 
-@Composable
-fun Add(){
-    Icon(Icons.Filled.Add,"")
-}
-@Preview(showBackground = true)
-@Composable
-fun AddPreview() {
-    TodoApppracticeTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
-        ) {
-            Add()
-        }
-    }
-}
