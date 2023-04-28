@@ -120,7 +120,9 @@ fun ToDo(){
                     modifier = Modifier.weight(1f),
                     shape = RoundedCornerShape(50),
                     colors = ButtonDefaults.buttonColors(backgroundColor = Color.Black),
-                    onClick = { /*TODO*/ }) {
+                    onClick = { /*TODO*/ }
+                )
+                {
                     Text(
                         text = "Delete",
                         color = Color.White,
@@ -128,6 +130,36 @@ fun ToDo(){
                         fontSize = MaterialTheme.typography.h6.fontSize
                     )
                 }
+            }
+        }
+
+    }
+}
+
+@Composable
+fun AddTodoWidget(){
+    Card(
+        elevation = 10.dp,
+        modifier = Modifier
+            .padding(10.dp)
+            .requiredHeight(200.dp),
+        border = BorderStroke(2.dp, Color.Black)
+    )
+    {
+        Row() {
+            Button(
+                modifier = Modifier.weight(1f),
+                shape = RoundedCornerShape(50),
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color.Black),
+                onClick = { /*TODO*/ }
+            )
+            {
+                Text(
+                    text = "Add",
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = MaterialTheme.typography.h6.fontSize
+                )
             }
         }
 
