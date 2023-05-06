@@ -17,7 +17,10 @@ import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -27,78 +30,22 @@ import androidx.compose.ui.unit.dp
 import com.example.todoapppractice.ui.theme.TodoApppracticeTheme
 
 //@Composable
-//fun ToDo(){
-//    Card(
-//        elevation = 10.dp,
-//        modifier = Modifier
-//            .padding(10.dp)
-//            .requiredHeight(200.dp),
-////        backgroundColor = Color.Magenta,
-//        border = BorderStroke(2.dp, Color.Black)
-//    ) {
-//        Column(
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(10.dp)
+//fun TDo(){
+//    var text by remember { mutableStateOf("type here") }
+//    Column() {
+//        TextField(value ="write here" , onValueChange = {})
+//    }
+//
+//}
+//@Preview(showBackground = true)
+//@Composable
+//fun DefaultPreview() {
+//    TodoApppracticeTheme {
+//        Surface(
+//            modifier = Modifier.fillMaxSize(),
+//            color = MaterialTheme.colors.background
 //        ) {
-//            Column() {
-//                Text(
-//                    text = "Task name",
-//                    fontSize = MaterialTheme.typography.h6.fontSize,
-//                    fontWeight = FontWeight.Bold
-//                )
-//                Text(
-//                    text = "Description of the task and any other explanation Description of the task and any other explanation Description of the task and any other explanation",
-//                    fontSize = MaterialTheme.typography.h6.fontSize
-//
-//                )
-//            }
-//            Spacer(modifier = Modifier.height(45.dp))
-//            Row(
-//                modifier = Modifier
-//                    .weight(1f, false),
-//                verticalAlignment = Alignment.CenterVertically,
-//                horizontalArrangement = Arrangement.End,
-//            ) {
-//                Button(
-//                    modifier = Modifier.weight(1f),
-//                    shape = RoundedCornerShape(50),
-//                    colors = ButtonDefaults.buttonColors(backgroundColor = Color.Black),
-//                    onClick = { /*TODO*/ }) {
-//                    Text(
-//                        text = "Edit",
-//                        color = Color.White,
-//                        fontWeight = FontWeight.Bold,
-//                        fontSize = MaterialTheme.typography.h6.fontSize
-//                    )
-//                }
-//                Button(
-//                    modifier = Modifier.weight(1f),
-//                    shape = RoundedCornerShape(50),
-//                    colors = ButtonDefaults.buttonColors(backgroundColor = Color.Black),
-//                    onClick = { /*TODO*/ }) {
-//                    Text(
-//                        text = "Delete",
-//                        color = Color.White,
-//                        fontWeight = FontWeight.Bold,
-//                        fontSize = MaterialTheme.typography.h6.fontSize
-//                    )
-//                }
-//            }
+//            TDo()
 //        }
-//
 //    }
 //}
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    TodoApppracticeTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
-        ) {
-            ToDo()
-
-        }
-    }
-}
