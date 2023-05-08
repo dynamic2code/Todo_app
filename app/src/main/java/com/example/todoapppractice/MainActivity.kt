@@ -231,7 +231,23 @@ fun AddTodoWidget() {
         }
     }
 }
+@Composable
+fun Default_view(){
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(10.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = "There are no tasks yet \n Add with the plus button",
+            color = Color.Black,
+            fontWeight = FontWeight.Bold,
+            fontSize = MaterialTheme.typography.h6.fontSize
+        )
+    }
 
+}
 @Preview(showBackground = true)
 @Composable
 fun AddPreview() {
@@ -241,6 +257,7 @@ fun AddPreview() {
             color = MaterialTheme.colors.background
         ) {
             ToDoAPP()
+            Default_view()
         }
     }
 }
